@@ -1,0 +1,231 @@
+########################################
+##File with creation of plots and things 
+##for Unit 5 370 redesign
+########################################
+
+#####################################
+#PCM5a
+
+#####################################
+#PCM5b
+n <- 11
+y <- rnorm(n, mean = 10, sd = 3)
+sorty <- sort(y)
+quants <- round((1:n-0.5)/n, 3) 
+zvals <- qnorm(quants)
+
+round(data.frame(sorted = round(sorty, 1) , observedQuant = quants, theoreticalQuant = zvals), 3)
+
+png(filename = "QQPlotN(10,9).png", width = 800, height = 480)
+qqplot(x = zvals, y = sorty, xlab = "Theoretical Normal Quantiles", ylab = "Sorted Observed Values", main = "Observed Data from a N(10, 9)", ylim = c(2,14))
+qqline(y = sorty)
+dev.off()
+
+png(filename = "QQPlotGridNormal.png", width = 800, height = 480)
+par(mfrow = c(2, 2))
+
+n <- 100
+mean <- 100
+sd <- 10
+y <- rnorm(n, mean = mean, sd = sd)
+qqnorm(y = y, xlab = "Theoretical Normal Quantiles", ylab = "Sorted Observed Values", main = paste("Observed Data (n = ", n, ") from a N(", mean, ", ", sd^2, ")", sep = ""))
+qqline(y = y)
+
+n <- 30
+mean <- -5
+sd <- 10
+y <- rnorm(n, mean = mean, sd = sd)
+qqnorm(y = y, xlab = "Theoretical Normal Quantiles", ylab = "Sorted Observed Values", main = paste("Observed Data (n = ", n, ") from a N(", mean, ", ", sd^2, ")", sep = ""))
+qqline(y = y)
+
+n <- 1000
+mean <- 0
+sd <- 1
+y <- rnorm(n, mean = mean, sd = sd)
+qqnorm(y = y, xlab = "Theoretical Normal Quantiles", ylab = "Sorted Observed Values", main = paste("Observed Data (n = ", n, ") from a N(", mean, ", ", sd^2, ")", sep = ""))
+qqline(y = y)
+
+n <- 30
+mean <- 2
+sd <- 5
+y <- rnorm(n, mean = mean, sd = sd)
+qqnorm(y = y, xlab = "Theoretical Normal Quantiles", ylab = "Sorted Observed Values", main = paste("Observed Data (n = ", n, ") from a N(", mean, ", ", sd^2, ")", sep = ""))
+qqline(y = y)
+dev.off()
+
+
+png(filename = "QQPlotGridOther.png", width = 800, height = 480)
+par(mfrow = c(2, 2))
+
+n <- 100
+rate <- 10
+y <- rexp(n, rate = rate)
+qqnorm(y = y, xlab = "Theoretical Normal Quantiles", ylab = "Sorted Observed Values", main = paste("Observed Data (n = ", n, ") from a Exp(", rate, ")", sep = ""))
+qqline(y = y)
+
+n <- 10
+rate <- 10
+y <- rexp(n, rate = rate)
+qqnorm(y = y, xlab = "Theoretical Normal Quantiles", ylab = "Sorted Observed Values", main = paste("Observed Data (n = ", n, ") from a Exp(", rate, ")", sep = ""))
+qqline(y = y)
+
+n <- 100
+mean <- 30
+y <- rpois(n, lambda = mean)
+qqnorm(y = y, xlab = "Theoretical Normal Quantiles", ylab = "Sorted Observed Values", main = paste("Observed Data (n = ", n, ") from a Poi(", mean, ")", sep = ""))
+qqline(y = y)
+
+n <- 100
+mean <- 3
+y <- rpois(n, lambda = mean)
+qqnorm(y = y, xlab = "Theoretical Normal Quantiles", ylab = "Sorted Observed Values", main = paste("Observed Data (n = ", n, ") from a Poi(", mean, ")", sep = ""))
+qqline(y = y)
+dev.off()
+
+
+
+png(filename = "CLTUnif.png", width = 500, height = 480)
+par(mfrow = c(2, 1))
+y <- seq(0, 1, length = 100)
+n <- 8
+N <- 100000
+plot(x = y, y = dunif(y), type = "l", ylim = c(0, 1.1), main = "Population Distribution", ylab = "PDF")
+means <- replicate(n = N, mean(runif(n)))
+hist(means, main = paste("Approximate Distribution of Sample Mean\n with n = ", n), xlab = "sample mean values", freq = FALSE)
+x <- seq(from = 0, to = 1, length = 1000)
+lines(x =x, y = dnorm(x, mean = 0.5, sd = 1/sqrt(12*n)), lwd = 2, type = "l")
+dev.off()
+
+
+png(filename = "CLTGamma.png", width = 500, height = 480)
+par(mfrow = c(2, 1))
+y <- seq(0, 10, length = 1000)
+n <- 15
+N <- 100000
+shape = 8
+rate = 2
+plot(x = y, y = dgamma(y, shape = shape, rate = rate), type = "l", main = "Population Distribution", ylab = "PDF")
+means <- replicate(n = N, mean(rgamma(n, shape = shape, rate = rate)))
+hist(means, main = paste("Approximate Distribution of Sample Mean\n with n = ", n), xlab = "sample mean values", freq = FALSE)
+x <- seq(from = 0, to = 10, length = 1000)
+lines(x =x, y = dnorm(x, mean = shape/rate, sd = sqrt(shape/(rate^2*n))), lwd = 2, type = "l")
+dev.off()
+
+
+png(filename = "CLTExp1.png", width = 500, height = 480)
+par(mfrow = c(2, 1))
+y <- seq(0, 5, length = 1000)
+n <- 15
+N <- 100000
+shape <- 1
+rate = 1
+plot(x = y, y = dgamma(y, shape = shape, rate = rate), type = "l", main = "Population Distribution", ylab = "PDF")
+means <- replicate(n = N, mean(rgamma(n, shape = shape, rate = rate)))
+hist(means, main = paste("Approximate Distribution of Sample Mean\n with n = ", n), xlab = "sample mean values", freq = FALSE)
+x <- seq(from = 0, to = 5, length = 1000)
+lines(x =x, y = dnorm(x, mean = shape/rate, sd = sqrt(shape/(rate^2*n))), lwd = 2, type = "l")
+dev.off()
+
+
+png(filename = "CLTExp2.png", width = 500, height = 480)
+par(mfrow = c(2, 1))
+y <- seq(0, 5, length = 1000)
+n <- 30
+N <- 100000
+shape <- 1
+rate = 1
+plot(x = y, y = dgamma(y, shape = shape, rate = rate), type = "l", main = "Population Distribution", ylab = "PDF")
+means <- replicate(n = N, mean(rgamma(n, shape = shape, rate = rate)))
+hist(means, main = paste("Approximate Distribution of Sample Mean\n with n = ", n), xlab = "sample mean values", freq = FALSE)
+x <- seq(from = 0, to = 5, length = 1000)
+lines(x =x, y = dnorm(x, mean = shape/rate, sd = sqrt(shape/(rate^2*n))), lwd = 2, type = "l")
+dev.off()
+
+
+png(filename = "CLTExp3.png", width = 500, height = 480)
+par(mfrow = c(2, 1))
+y <- seq(0, 5, length = 1000)
+n <- 100
+N <- 100000
+shape <- 1
+rate = 1
+plot(x = y, y = dgamma(y, shape = shape, rate = rate), type = "l", main = "Population Distribution", ylab = "PDF")
+means <- replicate(n = N, mean(rgamma(n, shape = shape, rate = rate)))
+hist(means, main = paste("Approximate Distribution of Sample Mean\n with n = ", n), xlab = "sample mean values", freq = FALSE)
+x <- seq(from = 0, to = 5, length = 1000)
+lines(x =x, y = dnorm(x, mean = shape/rate, sd = sqrt(shape/(rate^2*n))), lwd = 2, type = "l")
+dev.off()
+
+
+
+#####################################
+#PCM5c
+
+#plots of sampling distribution for ionized example
+png(filename = "HTIdeaPlot1.png", width = 800, height = 480)
+mean <- 0
+var <- 1
+curve(dnorm(x, mean = mean, sd = sqrt(var)), from = -5, to = 5, main = "Approximate Distribution of Z", ylab = "PDF", xlab = "z values", lwd = 2)
+abline(v = 4.17, lwd = 2, col = "Blue")
+text(x = 4.1, y = 0.3, "Observed\n test stat", cex=2.5)
+polygon(x = c(seq(-1.96, 1.96, length = 200), rev(seq(-1.96, 1.96, length = 200))), y = c(rep(0,200), dnorm(rev(seq(-1.96, 1.96, length = 200)), mean = mean, sd = sqrt(var))), col = "grey")
+text(x = 0, y = 0.1, "95% of the time we \n oberve z here", cex = 1.95)
+dev.off()
+
+
+#plots of sampling distribution for ionized example
+png(filename = "RRVis.png", width = 800, height = 480)
+mean <- 0
+var <- 1
+curve(dnorm(x, mean = mean, sd = sqrt(var)), from = -5, to = 5, main = "Approximate Distribution of Z", ylab = "PDF", xlab = "z values", lwd = 1)
+polygon(x = c(seq(-5, 1.645, length = 200), rev(seq(-5, 1.645, length = 200))), y = c(rep(0,200), dnorm(rev(seq(-5, 1.645, length = 200)), mean = mean, sd = sqrt(var))), col = "grey")
+text(x = -0.05, y = 0.1, "95% of the time we \n oberve z here", cex = 1.95)
+abline(v = 1.645, lwd = 2, col = "Blue")
+text(x = 3, y = 0.025, "Rejection Region", cex=1.75, col = "blue")
+dev.off()
+
+
+
+#RR Example
+png(filename = "RRVisExample.png", width = 800, height = 480)
+mean <- 0
+var <- 1
+curve(dnorm(x, mean = mean, sd = sqrt(var)), from = -5, to = 5, main = "Approximate Distribution of Z", ylab = "PDF", xlab = "z values", lwd = 1)
+polygon(x = c(seq(-5, -2.33, length = 200), rev(seq(-5, -2.33, length = 200))), y = c(rep(0,200), dnorm(rev(seq(-5, -2.33, length = 200)), mean = mean, sd = sqrt(var))), col = "grey")
+text(x = 0.05, y = 0.1, "99% of the time we \n oberve z here", cex = 1.95)
+abline(v = -2.33, lwd = 2, col = "Blue")
+text(x = -4, y = 0.025, "Rejection Region", cex=1.75, col = "blue")
+dev.off()
+
+
+#plots p-value 
+png(filename = "Pvalue.png", width = 800, height = 480)
+mean <- 0
+var <- 1
+curve(dnorm(x, mean = mean, sd = sqrt(var)), from = -5, to = 5, main = "Approximate Distribution of Z", ylab = "PDF", xlab = "z values", lwd = 1)
+abline(v = 4.17, lwd = 2, col = "Green")
+text(x = 4.1, y = 0.3, "Observed\n test stat", cex=2.5)
+dev.off()
+
+
+#plots p-value vs RR
+png(filename = "RRPvalue.png", width = 800, height = 480)
+mean <- 0
+var <- 1
+curve(dnorm(x, mean = mean, sd = sqrt(var)), from = 0, to = 5, main = "Approximate Distribution of Z", ylab = "PDF", xlab = "z values", lwd = 1)
+polygon(x = c(seq(-5, 1.645, length = 200), rev(seq(-5, 1.645, length = 200))), y = c(rep(0,200), dnorm(rev(seq(-5, 1.645, length = 200)), mean = mean, sd = sqrt(var))), col = "grey")
+abline(v = 1.645, lwd = 2, col = "Blue")
+abline(v = 2, lwd = 2, col = "Green")
+polygon(x = c(seq(2, 5, length = 200), rev(seq(2, 5, length = 200))), y = c(rep(0,200), dnorm(rev(seq(2, 5, length = 200)), mean = mean, sd = sqrt(var))), col = "purple")
+dev.off()
+
+
+
+#plots p-value vs RR
+png(filename = "PValueExample.png", width = 800, height = 480)
+mean <- 0
+var <- 1
+curve(dnorm(x, mean = mean, sd = sqrt(var)), from = -5, to = 5, main = "Approximate Distribution of Z", ylab = "PDF", xlab = "z values", lwd = 1)
+polygon(x = c(seq(-5, -1.34, length = 200), rev(seq(-5, -1.34, length = 200))), y = c(rep(0,200), dnorm(rev(seq(-5, -1.34, length = 200)), mean = mean, sd = sqrt(var))), col = "grey")
+abline(v = -1.34, lwd = 2, col = "Green")
+dev.off()

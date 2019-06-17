@@ -1,0 +1,163 @@
+\documentclass[12pt,portrait,semhelv,semrot]{article}
+\usepackage{amsmath,fullpage, graphicx, pagecolor, enumerate, undertilde}
+\definecolor{slate}{rgb}{0.14, 0.18, 0.22}
+\definecolor{offSlate}{rgb}{0.19, 0.24, 0.29}
+\pagecolor{slate}
+%\pagecolor{offSlate}
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\textwidth}{6.5in} \setlength{\textheight}{9in}
+\setlength{\topmargin}{0.3in}
+
+\newlength{\cwd}
+\setlength{\cwd}{2cm}
+
+\def\mb{\mbox}
+
+\makeatletter
+
+\begin{document}
+\normalsize
+
+%PCM2
+\textcolor{white}{\textbf{
+$$\boldsymbol{\hat{p}_1 = \frac{\mbox{\# with a degree that care a lot}}{\mbox{Total \# with a degree}}} = \frac{181}{620}$$
+$$\boldsymbol{\hat{p}_2 = \frac{\mbox{\# with no degree that care a lot}}{\mbox{Total \# with no degree}}} = \frac{97}{406}$$
+$$\boldsymbol{\hat{p}_1 - \hat{p}_2} = \frac{181}{620}-\frac{97}{406} = 0.053$$
+$$\boldsymbol{SE(\hat{p}_1 - \hat{p}_2}) \approx 0.0280$$
+$$\boldsymbol{\hat{p}_1 - \hat{p}_2}$$	
+$$\boldsymbol{P(\hat{p}_1 - \hat{p}_2 < 0)}$$
+$$\boldsymbol{\hat{p}}$$
+$$\boldsymbol{\hat{p}_1 - \hat{p}_2\sim N\left(p_1-p_2, \frac{p_1(1-p_1)}{n_1}+\frac{p_2(1-p_2)}{n_2}\right)}$$	
+$$\boldsymbol{Y = \begin{cases} 0 & \mbox{person doesn't care} \\ 1 & \mbox{person cares}\end{cases}}$$
+$$\boldsymbol{Y\sim Ber(p)}$$
+$$\boldsymbol{p(y) = P(Y=y) = \begin{cases} 1-p & \mbox{ if } y = 0 \\ p & \mbox{ if } y = 1\\ 0 & \mbox{otherwise}\end{cases}}$$
+$$\boldsymbol{p(y) = \begin{cases} 1-p & \mbox{ if } y = 0 \\ p & \mbox{ if } y = 1\\ 0 & \mbox{otherwise}\end{cases}}$$
+$$\boldsymbol{Y_i = \begin{cases} 0 & \mbox{person i doesn't care} \\ 1 & \mbox{person i cares}\end{cases}}$$
+$$\boldsymbol{Y\sim Bin(5, p)}$$
+$$\boldsymbol{Y\sim Bin(n, p)}$$
+$$\boldsymbol{P(\mbox{1st F}\cap\mbox{2nd F}\cap\mbox{3rd F}\cap\mbox{4th F}\cap\mbox{5th F})}$$
+$$\boldsymbol{P(A\cap B) = P(A)P(B)}$$
+$$= \boldsymbol{P(\mbox{1st F})P(\mbox{2nd F})P(\mbox{3rd F})P(\mbox{4th F})P(\mbox{5th F})}$$
+$$= \boldsymbol{(1-p)(1-p)(1-p)(1-p)(1-p) = (1-p)^5}$$
+$$\boldsymbol{P(\mbox{1st S}\cap\mbox{2nd F}\cap\mbox{3rd F}\cap\mbox{4th F}\cap\mbox{5th F})}$$
+$$= \boldsymbol{P(\mbox{1st S})P(\mbox{2nd F})P(\mbox{3rd F})P(\mbox{4th F})P(\mbox{5th F})}$$
+$$= \boldsymbol{p(1-p)(1-p)(1-p)(1-p) = p(1-p)^4}$$
+$$\boldsymbol{P(\mbox{1st S}\cap\mbox{2nd S}\cap\mbox{3rd F}\cap\mbox{4th F}\cap\mbox{5th F})}$$
+$$= \boldsymbol{P(\mbox{1st S})P(\mbox{2nd S})P(\mbox{3rd F})P(\mbox{4th F})P(\mbox{5th F})}$$
+$$= \boldsymbol{(p)(p)(1-p)(1-p)(1-p) = p^2(1-p)^3}$$
+$$\boldsymbol{\binom{5}{2} = \frac{5!}{2!(5-2)!} = 10}$$
+$$\boldsymbol{\binom{n}{y} = \frac{n!}{y!(n-y)!}}$$
+$$\boldsymbol{Y\sim Bin(n,p)}$$
+$$\boldsymbol{p(y) = \begin{cases} \binom{n}{y}p^y(1-p)^{n-y} & y = 0, 1, ..., n \\ 0 & \mbox{otherwise}\end{cases}}$$
+$$\boldsymbol{Y\sim Bin(25,0.1)}$$
+$$\boldsymbol{Y\sim Bin(25,0.2)}$$
+$$\boldsymbol{Y\sim Bin(25,0.4)}$$
+$$\boldsymbol{Y\sim Bin(100,0.2)}$$
+$$\boldsymbol{P(Y\geq 9) = \sum_{y=9}^{25}\binom{25}{y}0.2^y 0.8^{25-y}= 0.0468}$$
+$$\boldsymbol{P(Y > 9) = \sum_{y=10}^{25}\binom{25}{y}0.2^y 0.8^{25-y}= 0.0173}$$
+$$\boldsymbol{P(\hat{p} < 0.2) = P(Y/25 < 0.2)=P(Y<5) }$$
+$$ \boldsymbol{= \sum_{y=0}^{4}\binom{25}{y}0.2^y 0.8^{25-y}= 0.4207}$$
+$$\boldsymbol{\hat{p}= \frac{Y}{n}}$$
+$$\boldsymbol{Y\sim N(\mu, \sigma^2)}$$
+$$\boldsymbol{f(y) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{\frac{-1}{2\sigma^2}(y-\mu)^2} \mbox{ for }-\infty < y < \infty}$$
+$$\boldsymbol{F(y) = \int_{-\infty}^{y}\frac{1}{\sqrt{2\pi\sigma^2}}e^{\frac{-1}{2\sigma^2}(y-\mu)^2}dy}$$
+$$\boldsymbol{Z = \frac{Y-\mu}{\sigma}\sim N(0,1)}$$
+$$\boldsymbol{\Phi(z) = \int_{-\infty}^{z}\frac{1}{\sqrt{2\pi}}e^{\frac{-1}{2}z^2}dz}$$
+$$\boldsymbol{\hat{p}\sim N\left(0.2, \frac{0.2*0.8}{100}\right)\sim N(0.2, 0.0016)}$$
+$$\boldsymbol{P(\hat{p}<0.15) = P\left(\frac{\hat{p}-0.2}{\sqrt{0.0016}}< \frac{0.15-0.2}{\sqrt{0.0016}}\right)}$$
+$$\boldsymbol{= P(Z < -1.25) = \Phi(-1.25) = 0.1056}$$
+$$\boldsymbol{E(Y) = \sum_{support} y p(y)}$$
+$$\boldsymbol{E(Y) = \int_{-\infty}^{\infty} y f(y)dy}$$
+$$\boldsymbol{E(Y) = \sum_{y=0}^{n} y\binom{n}{y}p^{y}(1-p)^{n-y} = np}$$
+$$\boldsymbol{E(\hat{p}) = E\left(\frac{Y}{n}\right) = \sum_{y=0}^{n} \frac{y}{n}\binom{n}{y}p^{y}(1-p)^{n-y}}$$
+$$\boldsymbol{= \frac{1}{n}\sum_{y=0}^{n} \frac{y}{n}\binom{n}{y}p^{y}(1-p)^{n-y} = \frac{1}{n}np = p}$$
+$$\boldsymbol{E(a + bY) = a + bE(Y)}$$
+$$\boldsymbol{E(g(Y)) = \begin{cases} \sum_{support}g(y)f(y) & \mbox{ if Y discrete} \\ 
+\int_{-\infty}^{\infty}g(y)f(y)dy & \mbox{ if Y continuous}\end{cases}}$$
+$$\boldsymbol{Var(Y) = E\left((Y-E(Y))^2\right) = E(Y^2) - \left(E(Y)\right)^2}$$
+$$\boldsymbol{Var(Y) = E(Y^2) - (np)^2 = \sum_{y=0}^{n}y^2\binom{n}{y}p^y(1-p)^{n-y} - (np)^2}$$
+$$\boldsymbol{= n(n-1)p^2 + np -(np)^2 = np(1-p)}$$
+$$\boldsymbol{Var(\hat{p}) = Var\left(\frac{Y}{n}\right) = E\left(\left(\frac{Y}{n}-\frac{np}{n}\right)^2\right) = \frac{1}{n^2}Var(Y) = \frac{p(1-p)}{n}}$$
+$$\boldsymbol{Var(a+bY) = b^2Var(Y)}$$
+$$\boldsymbol{Y\sim Bin(n,p)}$$
+$$\boldsymbol{Y\sim N(np, np(1-p))}$$
+$$\boldsymbol{\hat{p} = \frac{Y}{n} \sim N\left(p, \frac{p(1-p)}{n}\right)}$$
+$$\boldsymbol{Y_1\sim Bin(n_1,p_1), Y_2 \sim Bin(n_2, p_2)}$$
+$$\boldsymbol{\hat{p}_1-\hat{p}_2 \sim N\left(p_1-p_2, \frac{p_1(1-p_1)}{n_1}+\frac{p_2(1-p_2)}{n_2}\right)}$$
+$$\boldsymbol{n_1\hat{p}_1\geq 10, n_1(1-\hat{p}_1)\geq 10, n_2\hat{p}_2\geq 10, n_2(1-\hat{p}_2)\geq 10}$$
+$$\boldsymbol{\hat{p}_1-\hat{p}_2 \pm 1.96\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}}$$
+$$\boldsymbol{\hat{p}_1 - \hat{p}_2 = 181/620 - 97/406 = 0.053}$$
+$$\boldsymbol{SE(\hat{p}_1-\hat{p_1}) \approx \sqrt{\frac{(181/620)(1-181/620)}{620}+\frac{(97/406)(1-97/406)}{406}} = 0.0280}$$
+$$\boldsymbol{\hat{p}\pm z^{*} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}}$$
+$$\boldsymbol{\hat{p}_1-\hat{p}_2 \pm z^{*}\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1}+\frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}}$$
+$$\boldsymbol{\mbox{Point Estimate}\pm \mbox{Margin of Error}}$$
+$$\boldsymbol{\hat{p}\sim N\left(p, \frac{p(1-p)}{n}\right)}$$
+$$\boldsymbol{z^{*}SE(\mbox{Point Estimator})}$$
+$$\boldsymbol{Y = \mu + \sigma Z \sim N(\mu, \sigma^2)}$$
+$$\boldsymbol{\frac{\hat{p} - p}{\sqrt{\frac{p(1-p)}{n}}} \sim N(0, 1)}$$
+$$\boldsymbol{\frac{\hat{p} - p}{\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}} \sim N(0, 1)}$$
+$$\boldsymbol{P\left(-1.96 < \frac{\hat{p} - p}{\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}} < 1.96\right) = 0.95}$$
+$$\boldsymbol{P\left(-1.96\sqrt{\frac{\hat{p}(1-\hat{p})}{n}} < \hat{p} - p < 1.96\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right) = 0.95}$$
+$$\boldsymbol{P\left(-\hat{p}-1.96\sqrt{\frac{\hat{p}(1-\hat{p})}{n}} < - p < -\hat{p} + 1.96\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right) = 0.95}$$
+$$\boldsymbol{P\left(\hat{p}-1.96\sqrt{\frac{\hat{p}(1-\hat{p})}{n}} < p < \hat{p} + 1.96\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right) = 0.95}$$
+$$\boldsymbol{\iff}$$
+$$\boldsymbol{\mbox{Point Estimate} \pm z^{*}SE(\mbox{Point Estimator})}$$
+$$\boldsymbol{\hat{p} = 276/480}$$
+$$\boldsymbol{SE(\hat{p}) \approx \sqrt{\frac{(276/480)(1-276/480)}{480}}}$$
+$$\boldsymbol{276/480\pm 2.58*\sqrt{\frac{(276/480)(1-276/480)}{480}}}$$
+$$\boldsymbol{n\hat{p}\geq 10~~~~~n(1-\hat{p})\geq 10}$$
+$$\boldsymbol{\hat{p}_1 - \hat{p}_2 = 175/290 - 101/190 = 0.072}$$
+$$\boldsymbol{SE(\hat{p}_1-\hat{p_2})\approx = 0.046}$$
+$$\boldsymbol{0.072\pm 2.58*0.046}$$
+}}
+\end{document}
+
+
+
+
+
+
+
+\begin{tabular}{c|ccc}
+	Name & Parameter & Statistic & Quantity Measured\\
+	\hline
+	Mean & $\boldsymbol{\mu}$ & $\boldsymbol{\bar{Y}}$ or 
+	$\boldsymbol{\bar{y}}$ & Center or Location\\
+	Proportion & $\boldsymbol{\rho}$ & $\boldsymbol{\hat{p}}$ or 
+	$\boldsymbol{\hat{\pi}}$ & Location or Frequency\\
+	Standard Deviation & $\boldsymbol{\sigma}$ & $\boldsymbol{S}$ or 
+	$\boldsymbol{s}$ & Variation or Spread\\
+	Variance & $\boldsymbol{\sigma^2}$ & $\boldsymbol{S^2}$ or 
+	$\boldsymbol{s^2}$ & Variation or Spread\\
+\end{tabular}
+$$\boldsymbol{\mu}$$
+$$\boldsymbol{\bar{Y}} = \boldsymbol{\frac{1}{n}\sum_{i=1}^{n}Y_i}$$
+$$\boldsymbol{M} = \mbox{Middle Value}$$
+$$\boldsymbol{y_1=25, y_2=28, y_3=41, y_4=34, y_5=21, y_6=24, y_7=25}$$
+$$\boldsymbol{\bar{y} = \frac{1}{7}(25+28+41+34+21+24+25)=28.29~years}$$
+$$\boldsymbol{21, 24, 25, 25, 28, 34, 41}$$
+$$\boldsymbol{21, 24, 25, 25, 27, 28, 34, 41}$$
+$$\boldsymbol{26}$$
+$$\boldsymbol{\sigma^2~~~~~~~~~~~~~\sigma~~~~~~S^2 = \frac{\sum_{i=1}^n(Y_i-\bar{Y})^2}{n-1}~~~~~S = \sqrt{S^2}}$$
+$$\boldsymbol{\bar{y} = 28.29~years}$$
+$$\boldsymbol{S^2 = \frac{(25-28.29)^2 + (28-28.29)^2 + ... + (25-28.29)^2}{7-1} = 47.90\mbox{ years}^2}$$ 
+$$\boldsymbol{ S = \sqrt{S^2} = 6.92\mbox{ years}}$$
+$$\boldsymbol{\bar{y} = 28.29}$$
+$$\boldsymbol{\hat{p} = \frac{\mbox{\# in Category}}{\mbox{Total \#}}}$$
+$$\boldsymbol{\frac{\hat{p}(1-\hat{p})}{n}~~~~\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}}$$
+$$\boldsymbol{p\mbox{ or }\pi}$$
+$$\boldsymbol{\frac{p(1-p)}{n}~~~~\sqrt{\frac{p(1-p)}{n}}}$$
+$$\boldsymbol{y_1=0, y_2=1, y_3=1, y_4=1, y_5=1, y_6=0, y_7=1}$$
+$$\boldsymbol{\hat{p} = \frac{0+1+1+1+1+0+1}{7} = \frac{5}{7}}$$
+$$\boldsymbol{SD(\hat{p}) = \sqrt{\frac{5/7(1-5/7)}{7}}=0.171}$$
+$$\boldsymbol{0 \leq P(A) \leq 1}$$
+$$\boldsymbol{\Omega~~~~~~~P(\Omega) = 1~~~~P(A) = 0.5}$$
+$$\boldsymbol{P(A~or~B) = P(A\cup B) = P(A)+P(B)}$$
+$$\boldsymbol{P(A\cup B) = P(A)+P(B)- P(A\cap B)~~~~~P(A\cap B) = P(A~and~B)}$$
+$$\boldsymbol{A^c~~~~~\bar{A}}$$
+$$\boldsymbol{1 = P(\Omega) = P(A\cup A^c) = P(A)+P(A^c) \implies P(A^c) = 1-P(A)}$$
+$$\boldsymbol{\hat{p} = \frac{Y}{20}}$$
+$$\boldsymbol{MOE = 2*s/\sqrt{n}}$$
+$$\boldsymbol{\mbox{Estimate of mean is } 28.29 \mbox{ years } (\pm 5.23 \mbox{ years})}$$
+$$\boldsymbol{n\hat{p}\geq 10, n(1-\hat{p})\geq 10}$$  
+$$\boldsymbol{\hat{p}\pm z^{*} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}}$$
