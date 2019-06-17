@@ -65,6 +65,22 @@ hist(x, main = "Histogram of Parent Ages", xlab = "Parent Age")
 
 barplot(t(c(2,5)), names.arg = c("No Vac", "Vac"), xlab = "Vaccine Status")
 
+#mean and variance population example graphs
+#install.packages("FAdist")
+library(FAdist)
+x <- seq(from = 14, to = 50, by = 0.05)
+shape = 10
+scale = 1.25
+thres = 14
+plot(x, dgamma3(x, shape, scale, thres), type = "l", lwd = 2, xlab = "Age", ylab = "PDF", main = "Approximate Population of Parent Ages")
+
+#add in mean
+abline(v = shape*scale + 14, lwd = 3, col = "Blue")
+#add in median
+abline(v = qgamma3(0.5, shape, scale, thres), lwd = 3, col = "Green")
+xshade <- seq(from = 14, to = qgamma3(0.5, shape, scale, thres), by = 0.05)
+polygon(x = c(xshade, rev(xshade)), y = c(dgamma3(xshade, shape, scale, thres), rep(0, length(xshade))), col = "Grey")
+
 #try to create mean/median animation
 library(animation)
 #transparent colors
