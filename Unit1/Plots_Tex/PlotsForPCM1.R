@@ -131,7 +131,6 @@ saveVideo(ani.replay())
 ##################################3
 ##read in school data
 library(readr)
-schoolData <- read_csv("School/pu_ssocs16.dat")
 
 ##read in mcd data
 mcData <- read_csv("McDonalds.csv")
@@ -178,10 +177,10 @@ mutate(countData, Prop = round(countData$n/sum(countData$n),2))
 ###############################################
 ##PCMb
 #read in pollution data
-pollution <- read_csv("pollution_us_2000_2016.csv")
+pollution <- read_csv("Unit1/data/pollution_us_2000_2016.csv")
 
 png(filename = "O3Hist.png")
-hist(pollution$O3Mean,freq = FALSE, ylim = c(0,40), main = "Average O3 Levels for Counties", xlab = "O3 Average")
+hist(pollution$O3Mean,freq = FALSE, ylim = c(0,40), main = "O3 Daily Means for Sites", xlab = "O3")
 #reasonable gamma using (almost) MOM
 alpha <- mean(pollution$O3Mean)^2/var(pollution$O3Mean)
 lambda <- mean(pollution$O3Mean)/var(pollution$O3Mean) 
@@ -189,27 +188,27 @@ curve(dgamma(x, shape = alpha, rate = 0.9*lambda), add = TRUE)
 dev.off()
 
 png(filename = "O3FreqHist.png")
-hist(pollution$O3Mean, main = "Average O3 Levels for Counties", xlab = "O3 Average")
+hist(pollution$O3Mean, main = "O3 Daily Means for Sites", xlab = "O3 Average")
 dev.off()
 
 #color probs
 png(filename = "O3FreqHist.png")
-h <- hist(pollution$O3Mean, main = "Average O3 Levels for Counties", xlab = "O3 Average")
+h <- hist(pollution$O3Mean, main = "O3 Daily Means for Sites", xlab = "O3 Average")
 col = c(rep("white", sum(h$breaks <= 0.04)), rep("red", sum(h$breaks > 0.04)))
-hist(pollution$O3Mean, main = "Average O3 Levels for Counties", xlab = "O3 Average",col = col)
+hist(pollution$O3Mean, main = "O3 Daily Means for Sites", xlab = "O3 Average",col = col)
 text(x = 0.07, y = 55000, paste0("Prob = ",round(sum(h$counts[h$breaks>0.04], na.rm = TRUE)/sum(h$counts, na.rm = TRUE), 3)), cex = 2)
 dev.off()
 
 
 png(filename = "O3PDF.png")
-curve(dgamma(x, shape = alpha, rate = 0.9*lambda), from = 0, to =0.1, main = "PDF of Average O3 Levels for Counties", ylab = "PDF", xlab = "O3 Values")
+curve(dgamma(x, shape = alpha, rate = 0.9*lambda), from = 0, to =0.1, main = "PDF of Daily O3 Mean", ylab = "PDF", xlab = "O3 Values")
 polygon(x = c(seq(0.04, 0.1, length = 100), rev(seq(0.04,0.1, length = 100))), y = c(rep(0,100), dgamma(rev(seq(0.04, 0.1, length = 100)), shape =alpha, rate = 0.9*lambda)), col = "red")
 text(x = 0.07, y = 20, paste0("Prob = ",round(1-pgamma(0.04,shape=alpha, rate = 0.9*lambda), 3)), cex = 2)
 dev.off()
 
 #disjoint prob visual
 png(filename = "O3Disjoint.png")
-curve(dgamma(x, shape = alpha, rate = 0.9*lambda), from = 0, to =0.1, main = "PDF of Average O3 Levels for Counties", ylab = "PDF", xlab = "O3 Values")
+curve(dgamma(x, shape = alpha, rate = 0.9*lambda), from = 0, to =0.1, main = "PDF of Daily O3 Mean", ylab = "PDF", xlab = "O3 Values")
 polygon(x = c(seq(0.04, 0.1, length = 100), rev(seq(0.04,0.1, length = 100))), y = c(rep(0,100), dgamma(rev(seq(0.04, 0.1, length = 100)), shape =alpha, rate = 0.9*lambda)), col = "red")
 polygon(x = c(seq(0.02, 0.03, length = 100), rev(seq(0.02,0.03, length = 100))), y = c(rep(0,100), dgamma(rev(seq(0.02, 0.03, length = 100)), shape =alpha, rate = 0.9*lambda)), col = "Grey")
 text(x = 0.07, y = 20, 
@@ -229,7 +228,7 @@ dev.off()
 
 #Additive rule prob visual
 png(filename = "O3AddRule.png")
-curve(dgamma(x, shape = alpha, rate = 0.9*lambda), from = 0, to =0.1, main = "PDF of Average O3 Levels for Counties", ylab = "PDF", xlab = "O3 Values")
+curve(dgamma(x, shape = alpha, rate = 0.9*lambda), from = 0, to =0.1, main = "PDF of Daily O3 Mean", ylab = "PDF", xlab = "O3 Values")
 polygon(x = c(seq(0.03, 0.04, length = 100), rev(seq(0.03,0.04, length = 100))), y = c(rep(0,100), dgamma(rev(seq(0.03, 0.04, length = 100)), shape =alpha, rate = 0.9*lambda)), col = rgb(1,0,0,0.7))
 polygon(x = c(seq(0.035, 0.045, length = 100), rev(seq(0.035,0.045, length = 100))), y = c(rep(0,100), dgamma(rev(seq(0.035, 0.045, length = 100)), shape =alpha, rate = 0.9*lambda)), col = rgb(0.5,0.5,0.5, 0.7))
 text(x = 0.07, y = 20, 
@@ -251,7 +250,7 @@ dev.off()
 
 #complement probs
 png(filename = "O3Complement.png")
-curve(dgamma(x, shape = alpha, rate = 0.9*lambda), from = 0, to =0.1, main = "PDF of Average O3 Levels for Counties", ylab = "PDF", xlab = "O3 Values")
+curve(dgamma(x, shape = alpha, rate = 0.9*lambda), from = 0, to =0.1, main = "PDF of Daily O3 Mean", ylab = "PDF", xlab = "O3 Values")
 polygon(x = c(seq(0.04, 0.1, length = 100), rev(seq(0.04,0.1, length = 100))), y = c(rep(0,100), dgamma(rev(seq(0.04, 0.1, length = 100)), shape =alpha, rate = 0.9*lambda)), col = "red")
 text(x = 0.053, y = 20.35, bquote(P(A^c)), cex = 1.5)
 text(x = 0.08, y = 20, paste0(" = 1-P(A) = ", round(pgamma(0.04,shape = alpha, rate = 0.9*lambda), 3)), cex = 1.5)
