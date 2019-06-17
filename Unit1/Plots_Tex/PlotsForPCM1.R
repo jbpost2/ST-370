@@ -290,7 +290,7 @@ lambda <- 12
 yprobs <- dpois(0:(lambda+2*lambda), lambda = lambda)
 png(filename = "Poi12Prob.png")
 plot(x = 0:(lambda+2*lambda), y = yprobs, lwd = 3, type = "h", xlab = "y values", ylab = "P(Y = y)", main = paste("Poisson PMF with mean = ", lambda, sep =""), col = c(rep("blue", 8), rep("black", 29)))
-text(x = 29, y = 0.06, "Blue corresponds to \n desired probability", cex = 2)
+text(x = 26, y = 0.06, "Blue corresponds\n to desired\n probability", cex = 2)
 dev.off()
 
 ppois(7, lambda)
