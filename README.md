@@ -32,7 +32,12 @@ Kiran to-do list:
     
 - PCM2b  
 
-    + I don't think the revie wpoints are relevant so that needs to be updated  
+    + Review points are not relevant so that needs to be updated  
+    + Extra examples could be formatted better, slide names changed  
+
+- PCM2c  
+
+    + Review points are not relevant so that needs to be updated  
     + Extra examples could be formatted better, slide names changed  
     
 
