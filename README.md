@@ -53,7 +53,7 @@ Tyler to-do:
 
 
 Justin to-do list:  
-- Go through 2, 3, 4  
+- Update 3 & 4  
 - Finish 5  
 - Finish 6  
 - Finish 7  
