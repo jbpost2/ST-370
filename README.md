@@ -34,7 +34,7 @@ Kiran to-do list:
 
     + I don't think the revie wpoints are relevant so that needs to be updated  
     + Extra examples could be formatted better, slide names changed  
-    + 
+    
 
 Tyler to-do:  
 - Look at schedule and get it more set  

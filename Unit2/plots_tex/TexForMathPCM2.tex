@@ -70,7 +70,7 @@ $$\boldsymbol{E(Y) = \sum_{support} y p(y)}$$
 $$\boldsymbol{E(Y) = \int_{-\infty}^{\infty} y f(y)dy}$$
 $$\boldsymbol{E(Y) = \sum_{y=0}^{n} y\binom{n}{y}p^{y}(1-p)^{n-y} = np}$$
 $$\boldsymbol{E(\hat{p}) = E\left(\frac{Y}{n}\right) = \sum_{y=0}^{n} \frac{y}{n}\binom{n}{y}p^{y}(1-p)^{n-y}}$$
-$$\boldsymbol{= \frac{1}{n}\sum_{y=0}^{n} \frac{y}{n}\binom{n}{y}p^{y}(1-p)^{n-y} = \frac{1}{n}np = p}$$
+$$\boldsymbol{= \frac{1}{n}\sum_{y=0}^{n} y\binom{n}{y}p^{y}(1-p)^{n-y} = \frac{1}{n}np = p}$$
 $$\boldsymbol{E(a + bY) = a + bE(Y)}$$
 $$\boldsymbol{E(g(Y)) = \begin{cases} \sum_{support}g(y)f(y) & \mbox{ if Y discrete} \\ 
 \int_{-\infty}^{\infty}g(y)f(y)dy & \mbox{ if Y continuous}\end{cases}}$$
@@ -109,6 +109,7 @@ $$\boldsymbol{n\hat{p}\geq 10~~~~~n(1-\hat{p})\geq 10}$$
 $$\boldsymbol{\hat{p}_1 - \hat{p}_2 = 175/290 - 101/190 = 0.072}$$
 $$\boldsymbol{SE(\hat{p}_1-\hat{p_2})\approx = 0.046}$$
 $$\boldsymbol{0.072\pm 2.58*0.046}$$
+$$\boldsymbol{F(y) = P(Y\leq y)}$$
 }}
 \end{document}
 
