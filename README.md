@@ -52,7 +52,21 @@ Kiran to-do list:
     + Review points need to be updated  
     + Extra examples looked at as well  
 
+- PCM4a  
 
+    + Review points are up to date, but maybe rework them a little  
+    + Extra examples should be standardized and maybe shortened a bit?  
+    + Extra example for second part isn't updated  
+    
+- PCM4b  
+
+
+- PCM 4c  
+
+
+
+    
+    
 Tyler to-do:  
 - Look at schedule and get it more set  
 - Figure out first day intro class  
@@ -65,7 +79,7 @@ Tyler to-do:
 
 
 Justin to-do list:  
-- Update 3 & 4  
+- Update 4  
 - Finish 5  
 - Finish 6  
 - Finish 7  
