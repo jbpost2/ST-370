@@ -47,7 +47,10 @@ Kiran to-do list:
 - PCM3b  
 
     + Extra examples don't seem to be changed...  (Review points are correct here.)   
-    
+- PCM3c  
+
+    + Review points need to be updated  
+    + Extra examples looked at as well  
 
 
 Tyler to-do:  
