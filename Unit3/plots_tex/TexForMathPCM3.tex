@@ -25,6 +25,8 @@ $$\boldsymbol{Y_1 = \mbox{\# of ionized bulbs that are marketable}\sim Bin(180, 
 $$\boldsymbol{Y_2 = \mbox{\# of non-ionized bulbs that are marketable}\sim Bin(180, p_2)}$$
 $$\boldsymbol{Y\sim Bin(n,p)~~~~~E(Y)=np~~~~Var(Y)=np(1-p)}$$
 $$\boldsymbol{\hat{p}= \frac{Y}{n} ~~~~E(\hat{p}) = p~~~~~Var(\hat{p}) =\frac{p(1-p)}{n}}$$
+$$\boldsymbol{\hat{p}_1= \frac{Y_1}{n_1} ~~~~E(\hat{p}_1) = p_1~~~~~Var(\hat{p}_1) =\frac{p_1(1-p_1)}{n_1}}$$
+$$\boldsymbol{\hat{p}_2= \frac{Y_2}{n_2} ~~~~E(\hat{p}_2) = p_2~~~~~Var(\hat{p}_2) =\frac{p_2(1-p_2)}{n_2}}$$
 $$\boldsymbol{\hat{p}_1 = \frac{Y_1}{n_1} =\mbox{Proportion of ionized bulbs that are marketable}}$$
 $$\boldsymbol{\hat{p}_2 = \frac{Y_2}{n_2} =\mbox{Proportion of non-ionized bulbs that are marketable}}$$
 $$\boldsymbol{Var(Y) =E\left((Y-E(Y))^2\right) =  E(Y^2) - (E(Y))^2 = \sum_{y=0}^{n}y^2\binom{n}{y}p^y(1-p)^{n-y} - (np)^2}$$
@@ -34,7 +36,10 @@ $$\boldsymbol{= \int\int y_1y_2f_{Y_1}(y_1)f_{Y_2}(y_2)dy_1dy_2 = \left(\int y_1
 $$\boldsymbol{E\left(\hat{p}_1-\hat{p}_2\right) = E\left(\hat{p}_1\right)-E\left(\hat{p}_2\right) = p_1-p_2}$$
 $$\boldsymbol{Var(\hat{p}_1-\hat{p}_2) = Var(\hat{p}_1) + Var(\hat{p_2}) -2Cov(\hat{p}_1,\hat{p}_2)}$$
 $$\boldsymbol{= \frac{p_1(1-p_1)}{n_1}+\frac{p_2(1-p_2)}{n_2}}$$
-$$\boldsymbol{Var(aY_1+bY_2) = a^2Var(Y_1)+b^2Var(Y_2) + 2abCov(Y_1,Y_2)}$$
+$$\boldsymbol{Var(aY_1+bY_2 + c) = a^2Var(Y_1)+b^2Var(Y_2) + 2abCov(Y_1,Y_2)}$$
+$$\boldsymbol{E(aY_1+bY_2+c) = aE(Y_1) + bE(Y_2) + c}$$
+$$\boldsymbol{Cov(Y_1,Y_2) = E\left[(Y_1-E(Y_1))(Y_2-E(Y_2))\right] = E(Y_1Y_2)-E(Y_1)E(Y_2)}$$
+$$\boldsymbol{Cov(Y_1,Y_1) = E\left[(Y_1-E(Y_1))^2\right] = Var(Y_1)}$$
 $$\boldsymbol{E(Y_1+Y_2+Y_3+Y_4+Y_5) = p +p+p+p+p = 5p ~~~~~(np)}$$
 $$\boldsymbol{Var(Y_1+Y_2+Y_3+Y_4+Y_5) = p^2+p^2+p^2+p^2+p^2 = 5p^2 ~~~~~(np^2)}$$
 $$\boldsymbol{n_1\hat{p}_1\geq 10, n_1(1-\hat{p}_1)\geq 10, n_2\hat{p}_2\geq 10, n_2(1-\hat{p}_2)\geq 10}$$
@@ -53,6 +58,11 @@ $$\boldsymbol{= P(Z > 4.17|p_1-p_2=0) \approx 0}$$
 $$\boldsymbol{Z = \frac{\hat{p}_1-\hat{p}_2}{\sqrt{\hat{p}(1-\hat{p})(\frac{1}{n_1}+\frac{1}{n_2})}}\sim N(0,1)}$$
 $$\boldsymbol{z = \frac{0.19-0.27}{\sqrt{\frac{46}{200}\left(1-\frac{46}{200}\right)\left(\frac{1}{100}+\frac{1}{100}\right)}}=-1.34}$$
 $$\boldsymbol{P(Z\leq -1.34) = \int_{-\infty}^{-1.34}\frac{1}{\sqrt{2\pi}}e^{\frac{-z^2}{2}}dz =0.0901}$$
+$$\boldsymbol{E\left(\hat{p}_1-\hat{p}_2\right) = E\left(\hat{p}_1\right)-E\left(\hat{p}_2\right)}$$
+$$\boldsymbol{Var(\hat{p}_1-\hat{p}_2)}$$
+$$\boldsymbol{E(g(Y_1, Y_2)) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}g(y_1,y_2)f_{Y_1,Y_2}(y_1,y_2)dy_1dy_2}$$
+$$\boldsymbol{E(\hat{p}_1-\hat{p}_2) = \int\int_{supports} (\hat{p}_1-\hat{p}_2)f_{\hat{p}_1,\hat{p}_2}(\hat{p}_1,\hat{p}_2)d\hat{p}_1d\hat{p}_2}$$
+$$\boldsymbol{= \int\int_{supports} \hat{p}_1f_{\hat{p}_1}(\hat{p}_1)f_{\hat{p}_2}(\hat{p}_2)d\hat{p}_1d\hat{p} -\int\int_{supports} \hat{p}_2f_{\hat{p}_1}(\hat{p}_1)f_{\hat{p}_2}(\hat{p}_2)d\hat{p}_1d\hat{p}}$$
 }}
 \end{document}
 

@@ -40,6 +40,15 @@ Kiran to-do list:
     + Review points are not relevant so that needs to be updated  
     + Extra examples could be formatted better, slide names changed  
     
+- PCM3a  
+
+    + Look over extra examples. (Review points are correct here.)  
+    
+- PCM3b  
+
+    + Extra examples don't seem to be changed...  (Review points are correct here.)   
+    
+
 
 Tyler to-do:  
 - Look at schedule and get it more set  
