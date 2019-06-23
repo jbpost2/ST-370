@@ -60,6 +60,8 @@ Kiran to-do list:
     
 - PCM4b  
 
+    + Take Extra examples and quiz bank questions from PCM4bold and put them into PCM4b (I added a scene and the easist way to do so was to just copy a file that already had three scenes).  There won't be anything corresponding to the third part, that will need to be created.  Also, the examples and quiz questions for parts 1 and 2 of PCM4b may need to be redone...  
+    + 
 
 - PCM 4c  
 
@@ -87,5 +89,6 @@ Justin to-do list:
 - Finish 9  
 - Fix animiation of mean/vedian on 3.8 of PCM1a  
 - Update web and start to populate  
+- Put in video of simulation using lock 5 or something in PCM4b, 4.9
 
 

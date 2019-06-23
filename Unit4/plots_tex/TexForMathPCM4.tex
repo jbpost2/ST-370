@@ -1,8 +1,8 @@
 \documentclass[12pt,portrait,semhelv,semrot]{article}
-\usepackage{amsmath,fullpage, graphicx,  enumerate, undertilde} %pagecolor,
-%\definecolor{slate}{rgb}{0.14, 0.18, 0.22}
-%\definecolor{offSlate}{rgb}{0.19, 0.24, 0.29}
-%\pagecolor{slate}
+\usepackage{amsmath,fullpage, graphicx, pagecolor, enumerate, undertilde}
+\definecolor{slate}{rgb}{0.14, 0.18, 0.22}
+\definecolor{offSlate}{rgb}{0.19, 0.24, 0.29}
+\pagecolor{slate}
 %\pagecolor{offSlate}
 \renewcommand{\baselinestretch}{1.2}
 \setlength{\textwidth}{6.5in} \setlength{\textheight}{9in}
@@ -16,13 +16,29 @@
 \makeatletter
 
 \begin{document}
-\normalsize
+	\normalsize
 
 %PCM1a
-%\textcolor{white}{\textbf{
-
+\textcolor{white}{\textbf{
 $$\boldsymbol{P(A \mid B)  = \frac{P(A \cap B)}{P(B)} }$$
-%}}
+$$\boldsymbol{P(A \mid B)  = P(A) \mbox{ and } P(B\mid A) = P(B)}$$
+$$\boldsymbol{P(A \mid B)  = P(A)}$$
+$$\boldsymbol{P(B\mid A) = P(B)}$$
+$$\boldsymbol{P(A\cap B) = P(A)P(B)}$$
+$$\boldsymbol{\chi^2 = \sum_{rows}\sum_{columns}\frac{(Observed-Expected)^2}{Expected}}$$
+$$\boldsymbol{Y\sim exp(1/10)}$$
+$$\boldsymbol{f_Y(y) = \begin{cases} (1/10)e^{-y/10} & y >0 \\ 0 & otherwise\end{cases}}$$
+$$\boldsymbol{P(Y>2) = \int_2^{\infty}(1/10)e^{-y/10}dy = 0.8187}$$
+$$\boldsymbol{P(Y>2) = 1-P(Y\leq 2) = 1-F(2) = 1-(1 - e^{-2/10})}$$
+$$\boldsymbol{P(Y\leq y) = \int_{-\infty}^yf(y)dy = \begin{cases} 0 & y\leq 0\\ \int_0^{y} \lambda e^{-\lambda t}dt = 1-e^{-\lambda y} & y > 0\end{cases}}$$
+$$\boldsymbol{Y\sim \chi^2(k)}$$
+$$\boldsymbol{f(y) = \begin{cases}\frac{1}{2^{k/2}\Gamma(k/2)}y^{k/2}e^{-y/2} & y>0 \\ 0 & otherwise\end{cases}}$$
+$$\boldsymbol{P(Cell_{i,j}) = P(row_i)P(column_j)}$$
+$$\boldsymbol{E(Cell_{i,j}) = n\left(\frac{row_i~total}{n}\right)\left(\frac{column_j~total}{n}\right)}$$
+$$\boldsymbol{E(Cell_{i,j}) = \frac{(row_i~total)*(column_j~total)}{n}}$$
+$$\boldsymbol{\chi^2 = \sum_{i = 1}^I\sum_{j =1}^J\frac{(Cell_{i,j}-E(Cell_{i,j}))^2}{E(Cell_{i,j})}}$$
+$$\boldsymbol{\chi^2 = \sum_{i = 1}^I\sum_{j =1}^J\frac{(Cell_{i,j}-E(Cell_{i,j}))^2}{E(Cell_{i,j})}\sim\chi^2_{(I-1)(J-1)}}$$
+}}
 \end{document}
 
 
