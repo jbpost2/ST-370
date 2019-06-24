@@ -91,6 +91,9 @@ Justin to-do list:
 - Finish 9  
 - Fix animiation of mean/vedian on 3.8 of PCM1a  
 - Update web and start to populate  
-- Put in video of simulation using lock 5 or something in PCM4b, 4.9
+- Put in video of simulation using lock 5 or something in PCM4b, 4.9  
+- Add Kiran to the storyline licenses  
+- Send meeting invites (Tuesdays at 11)  
+- Post google analytics material for Kiran  
 
 
