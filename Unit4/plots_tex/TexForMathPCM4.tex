@@ -38,7 +38,11 @@ $$\boldsymbol{E(Cell_{i,j}) = n\left(\frac{row_i~total}{n}\right)\left(\frac{col
 $$\boldsymbol{E(Cell_{i,j}) = \frac{(row_i~total)*(column_j~total)}{n}}$$
 $$\boldsymbol{\chi^2 = \sum_{i = 1}^I\sum_{j =1}^J\frac{(Cell_{i,j}-E(Cell_{i,j}))^2}{E(Cell_{i,j})}}$$
 $$\boldsymbol{\chi^2 = \sum_{i = 1}^I\sum_{j =1}^J\frac{(Cell_{i,j}-E(Cell_{i,j}))^2}{E(Cell_{i,j})}\sim\chi^2_{(I-1)(J-1)}}$$
+$$\boldsymbol{\chi^2 = \frac{(586-432)^2}{432} + \frac{(785-939)^2}{939} + ... + \frac{(1255-969)^2}{969} = 540.94}$$
+$$\boldsymbol{P(\chi^2(4) \geq 540.94) = \int_{540.94}^{\infty}\frac{1}{2^{4/2}\Gamma(4/2)}y^{4/2-1}e^{-y/2}dy \approx 0}$$
 }}
+
+
 \end{document}
 
 

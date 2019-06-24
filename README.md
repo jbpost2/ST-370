@@ -61,11 +61,13 @@ Kiran to-do list:
 - PCM4b  
 
     + Take Extra examples and quiz bank questions from PCM4bold and put them into PCM4b (I added a scene and the easist way to do so was to just copy a file that already had three scenes).  There won't be anything corresponding to the third part, that will need to be created.  Also, the examples and quiz questions for parts 1 and 2 of PCM4b may need to be redone...  
-    + 
+    + Review points need to be updated  
 
 - PCM 4c  
 
-
+    + Definitely need to test out all of the "paths" for Unit 4 modules.  I think some got messed up when Brooke created them...  
+    + I removed one section of slides there.  The quiz questions and extra examples may be relevant - I'm not sure.  
+    
 
     
     
