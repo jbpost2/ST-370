@@ -3,6 +3,14 @@
 General to-do:  
 
 - Write scripts for each module  
+
+    + Unit 1 Herle  
+    + Unit 2 Jonathan  
+    + Unit 3 Justin  
+    + Unit 4 Tyler?  
+    + Unit 5 Kiran?  
+    + Meeting on July 12th to talk about the first 3 unit scripts  
+    
 - Record modules  
 - Look at JMP videos and where to put them into the course  
 
