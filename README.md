@@ -13,6 +13,7 @@ General to-do:
     
 - Record modules  
 - Look at JMP videos and where to put them into the course  
+- Populate web once things are ready (format updated already if people want to weigh in)
 
 Kiran to-do list:  
 
@@ -97,7 +98,6 @@ Justin to-do list:
 - Finish 8  
 - Finish 9  
 - Fix animiation of mean/vedian on 3.8 of PCM1a  
-- Update web and start to populate  
 - Put in video of simulation using lock 5 or something in PCM4b, 4.9  
 
 
