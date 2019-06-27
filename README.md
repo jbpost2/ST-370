@@ -3,8 +3,17 @@
 General to-do:  
 
 - Write scripts for each module  
+
+    + Unit 1 Herle  
+    + Unit 2 Jonathan  
+    + Unit 3 Justin  
+    + Unit 4 Tyler?  
+    + Unit 5 Kiran?  
+    + Meeting on July 12th to talk about the first 3 unit scripts  
+    
 - Record modules  
 - Look at JMP videos and where to put them into the course  
+- Populate web once things are ready (format updated already if people want to weigh in)
 
 Kiran to-do list:  
 
@@ -83,17 +92,12 @@ Tyler to-do:
 
 
 Justin to-do list:  
-- Update 4  
 - Finish 5  
 - Finish 6  
 - Finish 7  
 - Finish 8  
 - Finish 9  
 - Fix animiation of mean/vedian on 3.8 of PCM1a  
-- Update web and start to populate  
 - Put in video of simulation using lock 5 or something in PCM4b, 4.9  
-- Add Kiran to the storyline licenses  
-- Send meeting invites (Tuesdays at 11)  
-- Post google analytics material for Kiran  
 
 

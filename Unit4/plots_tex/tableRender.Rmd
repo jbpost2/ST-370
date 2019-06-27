@@ -21,5 +21,11 @@ tbl[1:5, 2] <- paste(tbl[1:5,2], " (", exp[,1], ")", sep ="")
 tbl[1:5, 3] <- paste(tbl[1:5,3], " (", exp[,2], ")", sep ="")
 knitr::kable(tbl)
 
+tbl2 <- data.frame(OS = c("Linux", "Windows", "Mac", "Other", "ColTotal"), Graduate = c(33, 16, 20, 4, 73), Undergraduate = c(21, 51, 45, 1, 118), RowTotal = c(54, 67, 65, 5, 191), stringsAsFactors = FALSE)
 
+exp <- round(outer(X = as.numeric(tbl2$RowTotal[1:4]), Y = as.numeric(t(tbl2[5,2:3])))/as.numeric(tbl2[5,4]), 1)
+
+tbl2[1:4, 2] <- paste(tbl2[1:4,2], " (", exp[,1], ")", sep ="")
+tbl2[1:4, 3] <- paste(tbl2[1:4,3], " (", exp[,2], ")", sep ="")
+knitr::kable(tbl2)
 ```
