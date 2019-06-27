@@ -44,35 +44,3 @@ exp <- round(outer(X = as.numeric(tbl$RowTotal[1:5]), Y = as.numeric(t(tbl[6,2:3
 tbl[1:5, 2] <- paste(tbl[1:5,2], " (", exp[,1], ")", sep ="")
 tbl[1:5, 3] <- paste(tbl[1:5,3], " (", exp[,2], ")", sep ="")
 knitr::kable(tbl)
-##See RMD file for output of tbl
-
-x <- seq(from = 0, to =25, length = 5000)
-plot(x, dchisq(x, df = 4), type = "l", lwd = 2, main = "Null Distribution \n (Chi-Square with 4 Degrees of Freedom)", xlab = "chi-sq values", ylab = "PDF")
-
-plot(x, dchisq(x, df = 4), type = "l", lwd = 2, main = "Rejection Region using a 0.05 Significance Level", xlab = "chi-sq values", ylab = "PDF")
-x2 <- seq(from = qchisq(0.95, df = 4), to = 25, length = 5000)
-polygon(c(x2,rev(x2)), c(dchisq(x2, df=4),rep(0,length(x2))), col = "blue")
-
-
-
-##second example in PCMc
-tbl2 <- data.frame(OS = c("Linux", "Windows", "Mac", "Other", "ColTotal"), Graduate = c(33, 16, 20, 4, 73), Undergraduate = c(21, 51, 45, 1, 118), RowTotal = c(54, 67, 65, 5, 191), stringsAsFactors = FALSE)
-
-exp <- round(outer(X = as.numeric(tbl2$RowTotal[1:4]), Y = as.numeric(t(tbl2[5,2:3])))/as.numeric(tbl2[5,4]), 1)
-
-tbl2[1:4, 2] <- paste(tbl2[1:4,2], " (", exp[,1], ")", sep ="")
-tbl2[1:4, 3] <- paste(tbl2[1:4,3], " (", exp[,2], ")", sep ="")
-knitr::kable(tbl2)
-
-obs <- tbl2[1:4,2:3]
-exp
-sum((obs-exp)^2/exp)
-1-pchisq(23.14,df = 3)
-
-##RR
-x <- seq(from = 0, to =25, length = 5000)
-plot(x, dchisq(x, df = 3), type = "l", lwd = 2, main = "Rejection Region using a 0.05 Significance Level", xlab = "chi-sq values", ylab = "PDF")
-x2 <- seq(from = qchisq(0.95, df = 3), to = 25, length = 5000)
-polygon(c(x2,rev(x2)), c(dchisq(x2, df=3),rep(0,length(x2))), col = "blue")
-abline(v = 23.14, lwd = 3, col = "Red")
-
