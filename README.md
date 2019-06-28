@@ -76,8 +76,12 @@ Kiran to-do list:
 
     + Review points need to be updated  
     + Extra examples and quiz questions looked at  
-    + Third part second section, perhaps a simulation for normal instead of graphs?  
-    + Third part needs to be finished (introduction of t-distribution and a simulation of normal vs t?)
+
+- PCM 5c  
+
+    + Review points need to be updated  
+    + Extra examples and quiz questions looked at  
+    + For the third section of the module (part 4) I didn't update the example from unit 2c.  Please put in a new matched pairs CI example here (similar to what is done in part 1 of the module).  
     
     
 Tyler to-do:  
@@ -92,7 +96,6 @@ Tyler to-do:
 
 
 Justin to-do list:  
-- Finish 5  
 - Finish 6  
 - Finish 7  
 - Finish 8  

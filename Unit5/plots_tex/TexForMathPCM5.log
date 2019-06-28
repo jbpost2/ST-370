@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.14)  28 JUN 2019 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.14)  28 JUN 2019 15:33
 entering extended mode
 **./TexForMathPCM5.tex
 (TexForMathPCM5.tex
@@ -233,7 +233,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-Overfull \hbox (5.13324pt too wide) detected at line 49
+Overfull \hbox (5.13324pt too wide) detected at line 66
 []
  []
 
@@ -244,11 +244,11 @@ Overfull \hbox (5.13324pt too wide) detected at line 49
 Here is how much of TeX's memory you used:
  2601 strings out of 492972
  34525 string characters out of 3135877
- 113455 words of memory out of 3000000
+ 114455 words of memory out of 3000000
  6438 multiletter control sequences out of 15000+200000
  9819 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,7n,37p,316b,167s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,9n,37p,316b,167s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmbsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cme
 xtra/cmbsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
@@ -257,7 +257,7 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on TexForMathPCM5.pdf (2 pages, 70605 bytes).
+Output written on TexForMathPCM5.pdf (2 pages, 77611 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

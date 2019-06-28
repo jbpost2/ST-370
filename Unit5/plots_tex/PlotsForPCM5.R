@@ -159,7 +159,7 @@ dev.off()
 
 
 #####################################
-#PCM5c
+#PCM5b
 
 t <- seq(from = -5, to =5, length = 5000)
 plot(t, dnorm(t), type = "l", ylab = "PDF", xlab = "t values", lwd = 2)
@@ -169,3 +169,53 @@ for(i in 1:5){
   lines(t, dt(t, df = df[i]), type = "l", col = color[i], lwd = 2)
 }
 legend(x = "topright", legend = c(df, "Infinity"), fill = c(color, "Black"), col = c(color, "Black"), lwd = 2, title = "Degrees of Freedom")
+
+
+#####################################
+#PCM5c
+
+#generation of electricity use data
+n <- 300
+#variable rate will be slightly lower but not practically significant
+set.seed(101)
+variable <- round(rgamma(n, shape = 10, rate = 1/20))
+standard <- variable + round(rnorm(300, mean = 5, sd = 15))
+
+electricity <- data.frame(variable, standard, difference = variable - standard)
+View(electricity)
+
+summary2 <- function(x){
+  val <- c(summary(x), sd(x))
+  names(val)[7] <- "SD"
+  return(val)
+}
+summary2(electricity$variable)
+round(apply(FUN = summary2, electricity, MARGIN = 2),1)
+
+electricity2 <- data.frame(kWh = c(electricity$variable, electricity$standard), Group = c(rep("Variable", 300), rep("Standard", 300)))
+library(ggplot2)
+ggplot(data = electricity2, aes(x = Group, y = kWh)) + geom_boxplot()
+ggplot(data = electricity, aes(y = difference)) + geom_boxplot()
+
+ggplot(data = electricity2, aes(x = kWh)) + geom_histogram() + facet_grid(.~Group)
+ggplot(data = electricity, aes(x = difference)) + geom_histogram() 
+
+qqnorm(electricity$difference)
+
+mean(electricity$difference) - qt(df = 299, 0.975)*sd(electricity$difference)/sqrt(300)
+mean(electricity$difference) + qt(df = 299, 0.975)*sd(electricity$difference)/sqrt(300)
+
+plot(t, dt(df = 299, t), lwd = 2, type = "l", main = "t multiplier")
+t2 <- seq(from = -5, to = qt(df=299, 0.975), length = 5000)
+polygon(c(t2, rev(t2)), c(dt(df = 299, t2), rep(0, length(t2))), col = "Grey")
+abline(v = qt(df = 299, 0.975), col = "Blue", lwd = 2)
+text(x = qt(df = 299, 0.975)+0.75, y = 0.07, round(qt(df=299, 0.975), 3), cex = 2)
+text(x=0, y = 0.15, "95% of Area", cex = 1.5)
+
+plot(t, dt(df = 20, t), lwd = 2, type = "l", main = "t multiplier with alpha = 0.1")
+abline(v = qt(df = 20, c(0.05, 0.95)), col = "Blue", lwd = 2)
+t2 <- seq(from = qt(df=20, 0.05), to = qt(df=20, 0.95), length = 5000)
+polygon(c(t2, rev(t2)), c(dt(df = 20, t2), rep(0, length(t2))), col = "Grey")
+text(x=0, y = 0.15, "90% of Area", cex = 1.5)
+text(x=3.5, y = 0.05, "5% of Area", cex = 1.5)
+text(x=-3.5, y = 0.05, "5% of Area", cex = 1.5)
