@@ -92,7 +92,6 @@ Tyler to-do:
 
 
 Justin to-do list:  
-- Update 4  
 - Finish 5  
 - Finish 6  
 - Finish 7  
