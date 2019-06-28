@@ -77,7 +77,16 @@ Kiran to-do list:
     + Definitely need to test out all of the "paths" for Unit 4 modules.  I think some got messed up when Brooke created them...  
     + I removed one section of slides there.  The quiz questions and extra examples may be relevant - I'm not sure.  
     
+- PCM 5a  
 
+    + Review points are good but extra examples and quiz questions need to be looked at  
+    
+- PCM 5b  
+
+    + Review points need to be updated  
+    + Extra examples and quiz questions looked at  
+    + Third part second section, perhaps a simulation for normal instead of graphs?  
+    + Third part needs to be finished (introduction of t-distribution and a simulation of normal vs t?)
     
     
 Tyler to-do:  
