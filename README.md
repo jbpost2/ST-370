@@ -16,7 +16,7 @@ Kiran to-do list:
 - PCM1b  
 
     + Extra examples in PCM1b part 1 not there, PCM1b part 2 are not formatted nicely (need latex) and some spacing fixes, slide names changed?  
-    + Review part (last bit) doesn't have any points to it (a message about writing key points was placed there apparently)  
+    + Review part (last bit) doesn't have any points to it (a message about writing key points was placed there apparently) (Completed!) 
     
 - PCM1c (Completed!)
 
