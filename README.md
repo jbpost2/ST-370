@@ -9,7 +9,7 @@ General to-do:
 Kiran to-do list:  
 
 - Go through and pull out all slide names and put into an excel document (1 new file of names in the landing page of the repo)  
-- Google analytics added as a trigger to each slide (will correspond to the names of the slides)  
+- Google analytics added as a trigger to each slide (will correspond to the names of the slides)  (In Progress)
 - Go through quiz questions, make sure they are set up correctly in articulate, check answers & relevance of questions, check behavior once on moodle  
 - Remove all module objectives (usually 2nd slide if they are there), but keep them in a file, *create* the objectives after looking through the module for those that don't have them.  These will be placed on the moodle site rather than within the module itself. (1 new file of objectives in the landing page of the repo)  (Completed!)
 
