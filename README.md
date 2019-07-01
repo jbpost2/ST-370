@@ -9,16 +9,16 @@ General to-do:
 Kiran to-do list:  
 
 - Go through and pull out all slide names and put into an excel document (1 new file of names in the landing page of the repo)  
-- Google analytics added as a trigger to each slide (will correspond to the names of the slides)  
+- Google analytics added as a trigger to each slide (will correspond to the names of the slides)  (In Progress)
 - Go through quiz questions, make sure they are set up correctly in articulate, check answers & relevance of questions, check behavior once on moodle  
-- Remove all module objectives (usually 2nd slide if they are there), but keep them in a file, *create* the objectives after looking through the module for those that don't have them.  These will be placed on the moodle site rather than within the module itself. (1 new file of objectives in the landing page of the repo)  
+- Remove all module objectives (usually 2nd slide if they are there), but keep them in a file, *create* the objectives after looking through the module for those that don't have them.  These will be placed on the moodle site rather than within the module itself. (1 new file of objectives in the landing page of the repo)  (Completed!)
 
 - PCM1b  
 
     + Extra examples in PCM1b part 1 not there, PCM1b part 2 are not formatted nicely (need latex) and some spacing fixes, slide names changed?  
-    + Review part (last bit) doesn't have any points to it (a message about writing key points was placed there apparently)  
+    + Review part (last bit) doesn't have any points to it (a message about writing key points was placed there apparently) (Completed!) 
     
-- PCM1c  
+- PCM1c (Completed!)
 
     + Extra examples in PCM1c need formatted a little better, slide names changed?  
     + PCM1c the last review part doesn't have any points to it 
@@ -68,7 +68,20 @@ Kiran to-do list:
     + Definitely need to test out all of the "paths" for Unit 4 modules.  I think some got messed up when Brooke created them...  
     + I removed one section of slides there.  The quiz questions and extra examples may be relevant - I'm not sure.  
     
+- PCM 5a  
 
+    + Review points are good but extra examples and quiz questions need to be looked at  
+    
+- PCM 5b  
+
+    + Review points need to be updated  
+    + Extra examples and quiz questions looked at  
+
+- PCM 5c  
+
+    + Review points need to be updated  
+    + Extra examples and quiz questions looked at  
+    + For the third section of the module (part 4) I didn't update the example from unit 2c.  Please put in a new matched pairs CI example here (similar to what is done in part 1 of the module).  
     
     
 Tyler to-do:  
@@ -83,17 +96,11 @@ Tyler to-do:
 
 
 Justin to-do list:  
-- Update 4  
-- Finish 5  
 - Finish 6  
 - Finish 7  
 - Finish 8  
 - Finish 9  
 - Fix animiation of mean/vedian on 3.8 of PCM1a  
-- Update web and start to populate  
 - Put in video of simulation using lock 5 or something in PCM4b, 4.9  
-- Add Kiran to the storyline licenses  
-- Send meeting invites (Tuesdays at 11)  
-- Post google analytics material for Kiran  
 
 
