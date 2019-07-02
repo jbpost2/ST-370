@@ -13,10 +13,10 @@ Kiran to-do list:
 - Go through quiz questions, make sure they are set up correctly in articulate, check answers & relevance of questions, check behavior once on moodle  
 - Remove all module objectives (usually 2nd slide if they are there), but keep them in a file, *create* the objectives after looking through the module for those that don't have them.  These will be placed on the moodle site rather than within the module itself. (1 new file of objectives in the landing page of the repo)  (Completed!)
 
-- PCM1b  
+- PCM1b  (Completed!) 
 
     + Extra examples in PCM1b part 1 not there, PCM1b part 2 are not formatted nicely (need latex) and some spacing fixes, slide names changed?  
-    + Review part (last bit) doesn't have any points to it (a message about writing key points was placed there apparently) (Completed!) 
+    + Review part (last bit) doesn't have any points to it (a message about writing key points was placed there apparently) 
     
 - PCM1c (Completed!)
 
