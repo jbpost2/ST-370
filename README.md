@@ -4,6 +4,9 @@ General to-do:
 
 - Write scripts for each module  
 - Record modules  
+    + Jonathan, Herle, Justin, Tyler each doing 2, Kiran 1  
+    + Herle will do 1st, Jonathan 2nd, Justin 3rd, Tyler 4th, Kiran 5th  
+    + Meeting set to discuss on Friday the 12th of July  
 - Look at JMP videos and where to put them into the course  
 
 Kiran to-do list:  
