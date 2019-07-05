@@ -99,7 +99,7 @@ Tyler to-do:
 
 
 Justin to-do list:  
-- Finish 6  
+- Finish 6bc  
 - Finish 7  
 - Finish 8  
 - Finish 9  
