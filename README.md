@@ -9,7 +9,7 @@ General to-do:
     + Meeting set to discuss on Friday the 12th of July  
 - Look at JMP videos and where to put them into the course  
 
-Kiran to-do list:  
+Kiran to-do lis
 
 - Go through and pull out all slide names and put into an excel document (1 new file of names in the landing page of the repo)  
 - Google analytics added as a trigger to each slide (will correspond to the names of the slides)  (In Progress)
