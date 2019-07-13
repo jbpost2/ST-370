@@ -4,9 +4,12 @@ General to-do:
 
 - Write scripts for each module  
 - Record modules  
+    + Jonathan, Herle, Justin, Tyler each doing 2, Kiran 1  
+    + Herle will do 1st, Jonathan 2nd, Justin 3rd, Tyler 4th, Kiran 5th  
+    + Meeting set to discuss on Friday the 12th of July  
 - Look at JMP videos and where to put them into the course  
 
-Kiran to-do list:  
+Kiran to-do list:
 
 - Go through and pull out all slide names and put into an excel document (1 new file of names in the landing page of the repo)  
 - Google analytics added as a trigger to each slide (will correspond to the names of the slides)  (In Progress)
@@ -83,6 +86,9 @@ Kiran to-do list:
     + Extra examples and quiz questions looked at  
     + For the third section of the module (part 4) I didn't update the example from unit 2c.  Please put in a new matched pairs CI example here (similar to what is done in part 1 of the module).  
     
+- PCM 6  
+
+    + All the usual things need to be done from here on out (6-9) - extra examples, new quiz questions, recap slides 
     
 Tyler to-do:  
 - Look at schedule and get it more set  
@@ -96,7 +102,7 @@ Tyler to-do:
 
 
 Justin to-do list:  
-- Finish 6  
+- Finish 6c  
 - Finish 7  
 - Finish 8  
 - Finish 9  
