@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.14)  20 JUN 2019 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.14)  17 JUL 2019 16:39
 entering extended mode
 **./TexForMathPCM3.tex
 (TexForMathPCM3.tex
@@ -249,7 +249,7 @@ Overfull \hbox (36.33168pt too wide) detected at line 66
 Here is how much of TeX's memory you used:
  2601 strings out of 492972
  34525 string characters out of 3135877
- 114011 words of memory out of 3000000
+ 114006 words of memory out of 3000000
  6438 multiletter control sequences out of 15000+200000
  9819 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -265,7 +265,7 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cmextra/cmmib6.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmr12.pfb>
-Output written on TexForMathPCM3.pdf (2 pages, 107914 bytes).
+Output written on TexForMathPCM3.pdf (2 pages, 107779 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
