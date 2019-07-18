@@ -55,3 +55,20 @@ Vbar2 <- 1.52
 
 (Vbar1-Vbar2)/sqrt((S1^2/n1+S2^2/n2))
 
+#PCM6c
+#null distribution with RR
+x <- seq(from = -5, to = 5, length = 5000)
+plot(x, dt(x,df = 13), main = "Null Distribution with Rejection Region", xlab = "tobs", ylab = "PDF", type = "l", lwd = 2)
+x2 <- seq(from = qt(df = 13, 0.95), to = 5, length = 5000)
+polygon(c(x2, rev(x2)), c(dt(x2, df = 13), rep(0, length(x2))), col = "Grey")
+text(x = qt(df=13, 0.95), y = -0.002, round(qt(df=13, 0.95), 3), cex = 1.5)
+abline(v = 0.8488, col = "Blue", lwd = 3)
+
+#pvalue
+x <- seq(from = -5, to = 5, length = 5000)
+plot(x, dt(x,df = 13), main = "Null Distribution with P-value", xlab = "tobs", ylab = "PDF", type = "l", lwd = 2)
+x2 <- seq(from = 0.8488, to = 5, length = 5000)
+polygon(c(x2, rev(x2)), c(dt(x2, df = 13), rep(0, length(x2))), col = "Purple")
+
+1-pt(0.8488, df =13)
+text(x = 0.8488, y = -0.002, 0.8488, cex = 1.5)

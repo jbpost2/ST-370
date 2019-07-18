@@ -3,8 +3,12 @@
 General to-do:  
 
 - Write scripts for each module  
+    
+    + Draft of 1a done, halfway discussed  
+    + Draft of 3 is done  
 - Record modules  
 - Look at JMP videos and where to put them into the course  
+
 
 Kiran to-do list:
 
@@ -85,7 +89,7 @@ Kiran to-do list:
     
 - PCM 6  
 
-    + All the usual things need to be done from here on out (6-9) - extra examples, new quiz questions, recap slides 
+    + All the usual things need to be done for PCM6: extra examples, new quiz questions, recap slides 
     
 Tyler to-do:  
 - Look at schedule and get it more set  
