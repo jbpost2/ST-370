@@ -72,3 +72,18 @@ polygon(c(x2, rev(x2)), c(dt(x2, df = 13), rep(0, length(x2))), col = "Purple")
 
 1-pt(0.8488, df =13)
 text(x = 0.8488, y = -0.002, 0.8488, cex = 1.5)
+
+
+#null and alternative distribution
+#null distribution with RR
+x <- seq(from = -4, to = 4, length = 5000)
+plot(x, dnorm(x), main = "Null Distribution with Rejection Region", xlab = "zobs", ylab = "PDF", type = "l", lwd = 2)
+x2 <- seq(from = qnorm(0.95), to = 4, length = 5000)
+polygon(c(x2, rev(x2)), c(dnorm(x2), rep(0, length(x2))), col = "Grey")
+
+
+x <- seq(from = -4, to = 4, length = 5000)
+plot(x, dnorm(x), main = "Null Distribution with Rejection Region", xlab = expression(bar(y)), ylab = "PDF", type = "l", lwd = 2, xaxt = "n")
+axis(side = 1, at = c(-3, -2, -1, 0, 1, 2, 3), labels = c(expression(mu[0]-3*sigma / sqrt(n)), expression(mu[0]-2*sigma / sqrt(n)),expression(mu[0]-1*sigma / sqrt(n)),expression(mu[0]),expression(mu[0]+sigma / sqrt(n)),expression(mu[0]+2*sigma / sqrt(n)),expression(mu[0]+3*sigma / sqrt(n))))
+x2 <- seq(from = qnorm(0.95), to = 4, length = 5000)
+polygon(c(x2, rev(x2)), c(dnorm(x2), rep(0, length(x2))), col = "Grey")
