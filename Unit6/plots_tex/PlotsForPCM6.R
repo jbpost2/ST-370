@@ -28,7 +28,7 @@ qqnorm(fungiData$mutations)
 qqline(y = fungiData$mutations)      
 
 #log transform EDA
-logfungiSummary <- fungiData %>% group_by(group) %>% summarise(Min = min(logMutations), Q1 = quantile(logMutations, 0.25), Median = quantile(logMutations, 0.5), Mean = mean(logMutations), Q3 = quantile(logMutations, 0.75), Max = max(logMutations))
+logfungiSummary <- fungiData %>% group_by(group) %>% summarise(Min = min(logMutations), Q1 = quantile(logMutations, 0.25), Median = quantile(logMutations, 0.5), Mean = mean(logMutations), Q3 = quantile(logMutations, 0.75), Max = max(logMutations), sd = sd(logMutations))
 logfungiSummary
 
 ggplot(data = fungiData, aes(x = logMutations)) + geom_density(fill = "grey") + facet_grid(. ~ group)
