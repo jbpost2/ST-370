@@ -2,15 +2,38 @@
 
 General to-do:  
 
-- Write scripts for each module  
+- Write scripts for modules & record  
+
+    + 1a finished (slide timings not done), 1b/c done but not discussed  
+    + 2a done but not discussed  
+    + 3 done but not discussed  
+    + 4, 5, 6 not done
     
-    + Draft of 1a done, halfway discussed  
-    + Draft of 3 is done  
-- Record modules  
 - Look at JMP videos and where to put them into the course  
+
+Justin to-do list:  
+- Finish 7 - one way ANOVA overview  
+- Finish 8 - Two way ANOVA overview  
+- Finish 9 - SLR overview  
+- Fix animiation of mean/vedian on 3.8 of PCM1a  
+- Put in video of simulation using lock 5 or something in PCM4b, 4.9  
+
+
+Tyler to-do:  
+- Look at schedule and get it more set  
+- Figure out first day intro class  
+- Unit 1 class days (see rough plan picture in unit 1 folder)  
+- Unit 2 class days (see rough plan picture in unit 2 folder)  
+- Direct instruction class days (see rough plan in picture in main folder)  
+- Unit 3, 4, ..., 9  
 
 
 Kiran to-do list:
+
+- Remove prev/next button/swipe functionality on first slide  
+- Remove next button/swipe functionality on Each "Take the quiz?" slide  
+- Remove next button/swipe functionality on Each "Quiz Time!" slide  
+
 
 - Go through and pull out all slide names and put into an excel document (1 new file of names in the landing page of the repo)  
 - Google analytics added as a trigger to each slide (will correspond to the names of the slides)  (In Progress)
@@ -91,23 +114,11 @@ Kiran to-do list:
 
     + All the usual things need to be done for PCM6: extra examples, new quiz questions, recap slides 
     
-Tyler to-do:  
-- Look at schedule and get it more set  
-- Figure out first day intro class  
-- Unit 1 class days (see rough plan picture in unit 1 folder)  
-- Unit 2 class days (see rough plan picture in unit 2 folder)  
-- Direct instruction class days (see rough plan in picture in main folder)  
-- Unit 3, 4, ..., 9  
 
 
 
 
-Justin to-do list:  
-- Finish 6c  
-- Finish 7 - one way ANOVA overview  
-- Finish 8 - Two way ANOVA overview  
-- Finish 9 - SLR overview  
-- Fix animiation of mean/vedian on 3.8 of PCM1a  
-- Put in video of simulation using lock 5 or something in PCM4b, 4.9  
+
+
 
 
