@@ -178,6 +178,8 @@ mutate(countData, Prop = round(countData$n/sum(countData$n),2))
 ##PCMb
 #read in pollution data
 pollution <- read_csv("Unit1/data/pollution_us_2000_2016.csv")
+library(tidyverse)
+View(select(pollution, siteNum, dateLocal, NO2Mean, O3Mean, SO2Mean, COMean)[seq(from = 1, to = 28, by = 4),])
 
 png(filename = "O3Hist.png")
 hist(pollution$O3Mean,freq = FALSE, ylim = c(0,40), main = "O3 Daily Means for Sites", xlab = "O3")

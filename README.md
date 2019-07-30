@@ -4,7 +4,7 @@ General to-do:
 
 - Write scripts for modules & record  
 
-    + 1a finished (slide timings not done), 1b mostly done (a few things to move around etc., extra examples need to be added), 1c done but not discussed  
+    + 1a finished (slide timings not done, animation not done, one quiz bank not right), 1b mostly done (a few things to move around etc., extra examples need to be added), 1c done but not discussed  
     + 2a done but not discussed  
     + 3 done but not discussed  
     + 4, 5, 6 not done
