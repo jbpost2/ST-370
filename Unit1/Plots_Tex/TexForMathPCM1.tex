@@ -32,6 +32,13 @@
 	Variance & $\boldsymbol{\sigma^2}$ & $\boldsymbol{S^2}$ or 
 	$\boldsymbol{s^2}$ & Variation or Spread\\
 \end{tabular}
+$$\boldsymbol{\int_{0.04}^{\infty}f(y)dy= 0.176}$$
+$$\boldsymbol{P(A) = \int_{0.03}^{0.04}f(y)dy= 0.223}$$
+$$\boldsymbol{P(B) = \int_{0.035}^{0.045}f(y)dy= 0.161}$$
+$$\boldsymbol{P(A\cap B) = \int_{0.035}^{0.04}f(y)dy= 0.095}$$
+$$\boldsymbol{P(A\cup B) = \int_{0.03}^{0.045}f(y)dy= 0.289}$$
+$$\boldsymbol{P(A\cup B) = \int_{0.04}^{\infty}f(y)dy + \int_{0.02}^{0.03}f(y)dy = 0.5}$$
+$$\boldsymbol{\int_{0}^{0.04}f(y)dy= 1 - \int_{0.04}^{\infty}f(y)dy = 0.824}$$
 $$\boldsymbol{\mu}$$
 $$\boldsymbol{\bar{Y}} = \boldsymbol{\frac{1}{n}\sum_{i=1}^{n}Y_i}$$
 $$\boldsymbol{M} = \mbox{Middle Value}$$
@@ -65,9 +72,9 @@ $$\boldsymbol{MOE = 2*s/\sqrt{n}}$$
 $$\boldsymbol{\mbox{Estimate of mean is } 28.29 \mbox{ years } (\pm 5.23 \mbox{ years})}$$
 $$\boldsymbol{n\hat{p}\geq 10, n(1-\hat{p})\geq 10}$$  
 $$\boldsymbol{\hat{p}\pm z^{*} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}}$$
-$$\boldsymbol{p(y) = P(Y=y) = \begin{cases} \frac{12^y e^{-12}}{y!} & y = 0, 1, 2, ... \\ 0 & \mbox{otherwise}\end{cases}}$$
-$$\boldsymbol{Y\sim Poi(12)}$$
-$$\boldsymbol{P(Y<8) = P(Y\leq 7) = \sum_{y=0}^{7}\frac{12^y e^{-12}}{y!}} = 0.0895$$
+$$\boldsymbol{p(x) = P(X=x) = \begin{cases} \frac{12^x e^{-12}}{x!} & x = 0, 1, 2, ... \\ 0 & \mbox{otherwise}\end{cases}}$$
+$$\boldsymbol{X\sim Poi(12)}$$
+$$\boldsymbol{P(X<8) = P(X\leq 7) = \sum_{x=0}^{7}\frac{12^x e^{-12}}{x!} = 0.0895}$$
 $$\boldsymbol{P(a < Y < b) = \int_a^b f(y)dy}$$
 $$\boldsymbol{f(y) = \begin{cases} 12e^{-12y} & y > 0 \\ 0 & \mbox{otherwise}\end{cases}}$$
 $$\boldsymbol{Y\sim Exp(12)}$$
