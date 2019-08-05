@@ -4,11 +4,15 @@ General to-do:
 
 - Write scripts for modules & record  
 
-    + 1a finished (slide timings not done, animation not done, one quiz bank not right), 1b mostly done (extra examples need to be added), 1c done but not discussed  
+    + 1a finished (animation not done, one quiz bank not right), 1b mostly done (extra examples need to be added), 1c done but not discussed  
 
-    + 2a done but not discussed  
+    + 2a/b done but not discussed  
     + 3 done but not discussed  
-    + 4, 5, 6 not done
+    + 4a (90%), b (40%), c (20%) (Tyler)  
+    + 5 ?  
+    + 6 ?  
+    
+- Introduction module - Tyler working on outline - to Justin on Thursday- Justin put in articulate - Tyler write script/record   
     
 - Look at JMP videos and where to put them into the course  
 
@@ -19,22 +23,11 @@ Justin to-do list:
 - Fix animiation of mean/vedian on 3.8 of PCM1a  
 - Put in video of simulation using lock 5 or something in PCM4b, 4.9  
 
-
-Tyler to-do:  
-- Look at schedule and get it more set  
-- Figure out first day intro class  
-- Unit 1 class days (see rough plan picture in unit 1 folder)  
-- Unit 2 class days (see rough plan picture in unit 2 folder)  
-- Direct instruction class days (see rough plan in picture in main folder)  
-- Unit 3, 4, ..., 9  
-
-
 Kiran to-do list:
 
 - Remove prev/next button/swipe functionality on first slide  
 - Remove next button/swipe functionality on Each "Take the quiz?" slide  
 - Remove next button/swipe functionality on Each "Quiz Time!" slide  
-
 
 - Go through and pull out all slide names and put into an excel document (1 new file of names in the landing page of the repo)  
 - Google analytics added as a trigger to each slide (will correspond to the names of the slides)  (In Progress)
@@ -119,7 +112,7 @@ Kiran to-do list:
 
 
 
-
+Note: 1c has some extra slides about SE of the mean and what not
 
 
 
