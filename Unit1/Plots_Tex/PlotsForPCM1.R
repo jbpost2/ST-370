@@ -153,7 +153,7 @@ countData <- mcData %>% count(Type)
 mutate(countData, Prop = round(countData$n/sum(countData$n),2))
 
 #breast cancer
-breastData <- read_tsv("BreastCancer.dat")
+breastData <- read_tsv("Unit1/data/BreastCancer.dat")
 hist(breastData$rectime, main = "Histogram of Recovery Time", xlab= "Recovery Time")
 abline(v = mean(breastData$rectime), lwd = 3, col = "Blue")
 text(x=1700, y = 70, paste("Mean", round(mean(breastData$rectime),2)), cex = 1.7)
