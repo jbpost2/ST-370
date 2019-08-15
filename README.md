@@ -2,26 +2,45 @@
 
 General to-do:  
 
-- Write scripts for modules & record  
+- Quizzes: First quiz if they miss any question that questions sends them to content (must branch)  
+- QUizzes: Other quizzes, a pass level will be set that may differ for each quiz  
 
-    + 1a finished (animation not done, one quiz bank not right), 1b mostly done (extra examples need to be added), 1c done but not discussed  
+- 0 Orienation module finalized  
 
-    + 2a/b done but not discussed  
-    + 3 done but not discussed  
-    + 4a (90%), b (40%), c (20%) (Tyler)  
-    + 5 ?  
-    + 6 ?  
+    + Tyler record  
+    + Justin publish and post on Monday morning  
+
+- 1 quizzes being finalized (animation not done on 1a)  
+
+    + 1a Herle, 1b Justin, 1c Duggins (by Sunday 18)
+    + Justin publish and post on Monday morning  
+
+- 2 scripts need to be looked over and quizzes need to be finished  
+
+    + Notes on 2b & 2c for Monday meeting  
+    + Quiz Q's vetted by Friday (23rd)   
+    + Published and posted by Monday the 26th  
     
-- Introduction module - Tyler working on outline - to Justin on Thursday- Justin put in articulate - Tyler write script/record   
+- 3 scripts need to be looked over and quizzes need to be finished  
+
+    + Notes on 3a, 3b & 3c for meeting (maybe Monday or Tuesday 26/27)  
+    + Quiz Q's vetted by Friday (30th)  
+    + Published and posted by Monday the 2nd  
     
+- 4 scripts mostly done by Tyler.  scripts need to be looked over and quizzes need to be finished  
+
+    + Rinse and repeat above  
+
+- 5 Scripts?  
+
+- 6 Scripts?  
+
 - Look at JMP videos and where to put them into the course  
-
 Justin to-do list:  
-- Finish 7 - one way ANOVA overview  
-- Finish 8 - Two way ANOVA overview  
-- Finish 9 - SLR overview  
-- Fix animiation of mean/vedian on 3.8 of PCM1a  
+- Fix animiation of mean/median on 3.8 of PCM1a  
+
 - Put in video of simulation using lock 5 or something in PCM4b, 4.9  
+
 
 Kiran to-do list:
 
