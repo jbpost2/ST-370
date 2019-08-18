@@ -2,6 +2,9 @@
 
 General to-do:  
 
+Check each first quiz after content failure part...  
+
+
 - Quizzes: First quiz if they miss any question that questions sends them to content (must branch)  
 - QUizzes: Other quizzes, a pass level will be set that may differ for each quiz  
 
@@ -12,7 +15,7 @@ General to-do:
 
 - 1 quizzes being finalized (animation not done on 1a)  
 
-    + 1a Herle, 1b Justin, 1c Duggins (by Sunday 18)
+    + 1a Herle, 1c Duggins (by Sunday 18)
     + Justin publish and post on Monday morning  
 
 - 2 scripts need to be looked over and quizzes need to be finished  
@@ -36,6 +39,7 @@ General to-do:
 - 6 Scripts?  
 
 - Look at JMP videos and where to put them into the course  
+
 Justin to-do list:  
 - Fix animiation of mean/median on 3.8 of PCM1a  
 
