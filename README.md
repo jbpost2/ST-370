@@ -2,32 +2,27 @@
 
 General to-do:  
 
-Check each first quiz after content failure part...  
-
-
+- Check each first quiz after content failure part...   
+- Check player values (window)  
+- Check branching of quiz result slides and of first quiz questions  
+- Check question points  
+- Check pass levels
+- Add GA?  
 - Quizzes: First quiz if they miss any question that questions sends them to content (must branch)  
 - QUizzes: Other quizzes, a pass level will be set that may differ for each quiz  
+- Remove prev/next button/swipe functionality on first slide  
+- Remove next button/swipe functionality on Each "Take the quiz?" slide  
+- Remove next button/swipe functionality on Each "Quiz Time!" slide  
 
-- 0 Orienation module finalized  
+- 2 needs to be recorded.  Quiz questions vetted.
 
-    + Tyler record  
-    + Justin publish and post on Monday morning  
-
-- 1 quizzes being finalized (animation not done on 1a)  
-
-    + 1a Herle, 1c Duggins (by Sunday 18)
-    + Justin publish and post on Monday morning  
-
-- 2 scripts need to be looked over and quizzes need to be finished  
-
-    + Notes on 2b & 2c for Monday meeting  
     + Quiz Q's vetted by Friday (23rd)   
     + Published and posted by Monday the 26th  
     
 - 3 scripts need to be looked over and quizzes need to be finished  
 
-    + Notes on 3a, 3b & 3c for meeting (maybe Monday or Tuesday 26/27)  
-    + Quiz Q's vetted by Friday (30th)  
+    + Notes on 3a, 3b & 3c for meeting Thursday, 29th  
+    + Quiz Q's vetted by Monday the 2nd  
     + Published and posted by Monday the 2nd  
     
 - 4 scripts mostly done by Tyler.  scripts need to be looked over and quizzes need to be finished  
@@ -41,16 +36,10 @@ Check each first quiz after content failure part...
 - Look at JMP videos and where to put them into the course  
 
 Justin to-do list:  
-- Fix animiation of mean/median on 3.8 of PCM1a  
-
 - Put in video of simulation using lock 5 or something in PCM4b, 4.9  
 
 
 Kiran to-do list:
-
-- Remove prev/next button/swipe functionality on first slide  
-- Remove next button/swipe functionality on Each "Take the quiz?" slide  
-- Remove next button/swipe functionality on Each "Quiz Time!" slide  
 
 - Go through and pull out all slide names and put into an excel document (1 new file of names in the landing page of the repo)  
 - Google analytics added as a trigger to each slide (will correspond to the names of the slides)  (In Progress)
